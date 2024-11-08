@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
   background-color: hsl(240, 20%, 88%);
   box-sizing: border-box;
   text-decoration: none;
@@ -13,10 +15,10 @@ M .container-main {
 }
 
 #logo {
-  margin-top: 30px;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  float: left;
-  padding-left: 30px;
   width: 130px;
 }
 
@@ -24,10 +26,10 @@ M .container-main {
   list-style: none;
   display: flex;
   float: right;
-  padding-right: 250px;
 }
 
 .container-menu ul a {
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +37,7 @@ M .container-main {
 }
 
 .container-gallary {
-  display: inline;
+  display: block;
   margin-top: 10px;
 }
 
@@ -56,4 +58,76 @@ M .container-main {
 }
 .notes {
   font-size: 50px;
+  text-align: center;
+  display: flex;
+}
+.container-footer {
+  text-align: center;
+  display: flex;
+}
+.logo,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+}
+.contact-details {
+  display: inline-block;
+  width: 33.33%;
+}
+
+.contact-details ul {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.contact-details ul li a {
+  padding: 10px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  width: 33.33%;
+}
+.social-media h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a {
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+/*CSS FOR About section*/
+
+.container-services,
+.ttl,
+.services,
+p,
+h2,
+h4 {
+  background-color: #000000ac;
+  color: white;
+}
+
+.container-members {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.mates {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  gap: 15px;
+}
+.mate img {
+  width: 100%;
+  border-radius: 15px;
 }
