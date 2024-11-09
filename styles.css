@@ -7,7 +7,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
+#bc {
+  border-color: rgb(218, 215, 191);
+}
 #bl-bg {
   background-color: rgba(23, 23, 23, 0.779);
   color: #fff;
@@ -41,6 +43,8 @@
   list-style: none;
   display: flex;
   float: right;
+  margin-right: 100px;
+  margin-bottom: 30px;
 }
 
 .container-menu ul a {
@@ -77,6 +81,7 @@
   display: flex;
 }
 .container-footer {
+  margin-top: 30px;
   text-align: center;
   display: flex;
 }
@@ -88,6 +93,7 @@ footer {
   width: 33.33%;
 }
 .contact-details {
+  margin-top: 80px;
   display: inline-block;
   width: 33.33%;
 }
@@ -102,7 +108,6 @@ footer {
   padding: 10px;
 }
 .social-media {
-  display: flex;
   justify-content: center;
   align-items: center;
   display: inline-block;
@@ -112,11 +117,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
 }
 
 .social-media a {
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
   color: black;
 }
 
@@ -161,16 +166,20 @@ h4 {
 /*THE CSS FOR CONTACT PAGES*/
 .contact {
   margin-top: 10px;
-  height: 500px;
+  display: inline-block;
 }
 .contact,
 .notes {
-  height: 250px;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 100%;
 }
 
 .contact h2,
 p {
-  margin: 30px;
+  display: inline-block;
+  padding-top: 30px;
   width: 100%;
   text-align: center;
 }
@@ -191,7 +200,7 @@ p {
 }
 
 .contact textarea {
-  height: 200px;
+  height: 100px;
   border-bottom: 1px solid black;
 }
 
@@ -203,10 +212,11 @@ p {
 .contact button {
   height: 60px;
   width: 100%;
+  margin-bottom: 10px;
 }
 .btn {
-  display: inline-block;
-  padding: 20px 20px;
+  margin-bottom: 10px;
+  padding: 20px;
   border: 1px solid #333;
   background: transparent;
   font-family: inherit;
@@ -217,4 +227,5 @@ p {
 .btn:hover {
   background: #333;
   color: #fff;
+  margin-bottom: 10px;
 }
