@@ -1,11 +1,24 @@
 *,
 ::before,
 ::after {
-  background-color: hsl(240, 20%, 88%);
+  padding: 0px;
+  margin: 0px;
+  background-color: hsl(240, 17%, 91%);
   box-sizing: border-box;
   text-decoration: none;
 }
-M .container-main {
+
+#bl-bg {
+  background-color: rgba(23, 23, 23, 0.779);
+  color: #fff;
+}
+
+#color {
+  background-color: hsl(240, 17%, 91%);
+  color: black;
+}
+
+.container-main {
   display: flex;
   width: 100%;
 }
@@ -15,7 +28,9 @@ M .container-main {
 }
 
 #logo {
-  background-color: aqua;
+  position: relative;
+  left: 60px;
+  top: 50px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -57,7 +72,7 @@ M .container-main {
   height: 250px;
 }
 .notes {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   display: flex;
 }
@@ -116,6 +131,17 @@ h4 {
   background-color: #000000ac;
   color: white;
 }
+.services {
+  height: 200px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  gap: 15px;
+  background-color: inherit;
+}
+.service {
+  width: 100%;
+}
 
 .container-members {
   text-align: center;
@@ -130,4 +156,65 @@ h4 {
 .mate img {
   width: 100%;
   border-radius: 15px;
+}
+
+/*THE CSS FOR CONTACT PAGES*/
+.contact {
+  margin-top: 10px;
+  height: 500px;
+}
+.contact,
+.notes {
+  height: 250px;
+}
+
+.contact h2,
+p {
+  margin: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-group {
+  margin: 40px 65px;
+  width: 90%;
+}
+
+.contact input,
+.contact textarea {
+  border: none;
+  border-bottom: 1px #333 solid;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding-bottom: 1rem;
+}
+
+.contact textarea {
+  height: 200px;
+  border-bottom: 1px solid black;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: 0;
+}
+
+.contact button {
+  height: 60px;
+  width: 100%;
+}
+.btn {
+  display: inline-block;
+  padding: 20px 20px;
+  border: 1px solid #333;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
 }
