@@ -10,7 +10,7 @@
 #bc {
   border-color: rgb(218, 215, 191);
 }
-#bl-bg {
+#black {
   background-color: rgba(23, 23, 23, 0.779);
   color: #fff;
 }
@@ -31,11 +31,12 @@
 
 #logo {
   position: relative;
-  left: 60px;
+  left: 180px;
   top: 50px;
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 50%;
   width: 130px;
 }
 
@@ -43,6 +44,7 @@
   list-style: none;
   display: flex;
   float: right;
+  width: 40%;
   margin-right: 100px;
   margin-bottom: 30px;
 }
@@ -50,9 +52,19 @@
 .container-menu ul a {
   color: black;
   display: flex;
+  font-weight: 200;
   justify-content: space-between;
   align-items: center;
   margin: 20px;
+}
+
+.container-menu ul li:hover {
+  background-color: blanchedalmond;
+  border-radius: 10px;
+}
+.container-menu ul li a:hover {
+  background-color: blanchedalmond;
+  font-size: larger;
 }
 
 .container-gallary {
@@ -107,6 +119,7 @@ footer {
 .contact-details ul li a {
   padding: 10px;
 }
+
 .social-media {
   justify-content: center;
   align-items: center;
@@ -128,32 +141,35 @@ footer {
 /*CSS FOR About section*/
 
 .container-services,
-.ttl,
 .services,
 p,
 h2,
 h4 {
+  display: inline;
   background-color: #000000ac;
   color: white;
 }
 .services {
+  display: inline-block;
   height: 200px;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, minmax(400px, 1fr));
   gap: 15px;
-  background-color: inherit;
 }
 .service {
+  display: inline-block;
   width: 100%;
 }
 
 .container-members {
+  display: inline-block;
   text-align: center;
   box-sizing: border-box;
 }
 
 .mates {
+  display: inline-block;
   display: grid;
   grid-template-columns: repeat(3, minmax(400px, 1fr));
   gap: 15px;
