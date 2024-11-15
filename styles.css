@@ -106,7 +106,12 @@
   text-align: center;
   display: flex;
 }
-.logo,
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+}
 footer {
   display: flex;
   justify-content: center;
