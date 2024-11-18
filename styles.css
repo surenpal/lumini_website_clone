@@ -14,67 +14,51 @@
 
 .container-main {
   display: flex;
-  width: 100%;
-}
-.container-menu {
-  height: 150px;
-  width: 100%;
-}
-
-#logo {
-  display: flex;
-  position: relative;
-  left: 180px;
-  top: 50px;
   justify-content: center;
   align-items: center;
+}
+.container-menu {
   display: flex;
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  margin: 50px;
   width: 130px;
+  height: 35px;
 }
 
 .container-menu ul {
   list-style: none;
   display: flex;
-  float: right;
-  width: 40%;
-  margin-right: 100px;
-  margin-bottom: 30px;
 }
 
 .container-menu ul li a {
   color: black;
-  display: flex;
   font-weight: 200;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   margin: 20px;
 }
 
-.container-menu ul li:hover {
-  cursor: pointer;
-  background-color: blanchedalmond;
-  border-radius: 10px;
-}
 .container-menu ul li a:hover {
   background-color: blanchedalmond;
   font-size: larger;
 }
 .container-about {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 .notes {
+  margin: 50px;
+  padding-top: 55px;
   color: black;
-  padding-top: 40px;
-  display: block;
   font-weight: 200;
-  margin-top: 20px;
   font-size: 60px;
   justify-content: center;
-  align-items: center;
   text-align: center;
   background-color: transparent;
 }
@@ -86,26 +70,21 @@
 }
 
 .container-gallary {
-  display: block;
-  margin-top: 10px;
+  margin: 20px;
 }
 
 .gallary {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 .gallary img {
-  margin-top: 20px;
   width: 100%;
   border-radius: 15px;
 }
 
 .container-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 10px;
+  margin: 20px;
 }
 
 .footer {
@@ -114,29 +93,23 @@
   gap: 15px;
 }
 
-/*#logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33.33%;
-}*/
 .contact-details {
-  margin-top: 80px;
+  margin: 20px;
+  justify-content: center;
   text-align: center;
-  width: 33.33%;
 }
 .contact-details ul {
   list-style-type: none;
 }
 
 .social-media {
-  display: flex;
-  flex-direction: row;
+  margin: 20px;
+  justify-content: ;
+  align-items: center;
 }
 
 .social-media ul {
-  display: flex;
-  flex-direction: row;
+  display: block;
   color: black;
 }
 .social-media ul li {
