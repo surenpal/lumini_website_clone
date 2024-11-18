@@ -29,7 +29,6 @@
   width: 130px;
   height: 35px;
 }
-
 .container-menu ul {
   list-style: none;
   display: flex;
@@ -69,6 +68,10 @@
   color: black;
 }
 
+.cnt {
+  background-color: #333;
+}
+
 .container-gallary {
   margin: 20px;
 }
@@ -104,17 +107,16 @@
 
 .social-media {
   margin: 20px;
-  justify-content: ;
+  justify-content: center;
   align-items: center;
 }
 
 .social-media ul {
-  display: block;
+  display: flex;
+  flex-direction: row;
   color: black;
 }
 .social-media ul li {
-  display: flex;
-  flex-direction: row;
   color: black;
 }
 
@@ -126,30 +128,25 @@
   background-color: #000000ac;
 }
 
-.black-box {
-  background-color: black;
-  padding: 20px;
-  margin: 0;
-}
-
 .services {
   background-color: black;
   color: white;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 .service {
+  margin: 20px;
   background-color: black;
   color: white;
 }
 #h-two {
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: black;
   color: white;
-  margin: 20px;
-  padding-top: 10px;
 }
 
 #bl {
@@ -164,7 +161,7 @@
 
 .mates {
   display: grid;
-  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  grid-template-columns: repeat(3 1fr);
   gap: 15px;
 }
 .mate img {
@@ -176,9 +173,6 @@
 .contact {
   margin-top: 10px;
   display: inline-block;
-}
-.contact,
-.notes {
   justify-content: center;
   align-items: center;
   height: 350px;
@@ -239,53 +233,27 @@ p {
   margin-bottom: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
   .gallary {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .gallary {
     grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
   }
 }
-
 @media (min-width: 750px) {
-  .services {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 750px) {
-  .services {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (min-width: 750px) {
+  .services,
   .mates {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 750px) {
+  .services,
   .mates {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (min-width: 750px) {
-  .logo,
-  .contact-details,
-  .social-media {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 750px) {
-  .logo,
-  .contact-details,
-  .social-media {
     grid-template-columns: repeat(1, 1fr);
   }
 }
