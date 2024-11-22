@@ -19,7 +19,9 @@
 }
 
 #logo {
-  margin: 50px;
+  display: flex;
+  float: left;
+  justify-items: left;
   width: 130px;
   height: 35px;
 }
